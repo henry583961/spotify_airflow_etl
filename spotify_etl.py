@@ -81,7 +81,7 @@ def collect_data_from_page(_track_items: list,
 def check_next_page_data(_next_page_url: str,
                          _access_token: str,
                          _songs_dict: dict
-                                ):
+                        ):
     while _next_page_url:
         next_page_data = get_playlist_data(_access_token, _next_page_url)
         track_items = next_page_data.get("items")
