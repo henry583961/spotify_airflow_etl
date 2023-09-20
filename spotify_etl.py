@@ -97,7 +97,6 @@ def run_spotify_etl():
     playlist_owner = playlist_data.get("owner")['display_name']
     next_page_url = playlist_data.get("tracks").get("next")
     track_items = playlist_data.get("tracks").get("items")
-    print(type(track_items))
     songs = {
         "added_at": [],
         "artist": [],
